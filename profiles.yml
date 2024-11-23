@@ -1,0 +1,29 @@
+
+demo_vishal:
+  outputs:
+    dev:
+      dataset: alpha_test
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /Users/vishal.arora/.dbt/dbt-technical-training-5c1cb0b6b777.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: dbt-technical-training
+      threads: 2
+      type: bigquery
+  target: dev
+vishal1:
+  outputs:
+    dev:
+      dataset: dbt-technical
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /Users/vishal.arora/.dbt/dbt-technical-training-5c1cb0b6b777.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: ' dbt-technical-training'
+      threads: 2
+      type: bigquery
+  target: dev
